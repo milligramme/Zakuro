@@ -2,7 +2,7 @@
 
 class Zakuro
   def timeline
-    t = Twitter.public_timeline
+    Twitter.public_timeline
   end
 end
 

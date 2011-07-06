@@ -2,6 +2,5 @@
 - @tl.each do |t|
   #colors
     - convert_hex(t.text).each do |ch|
-      %span#ch>
-        %font{:color => "#{ch}"}> ■
+      %span#ch{:style => "color: ##{ch}"}> ■
     #original （ "#{t.text}"）
