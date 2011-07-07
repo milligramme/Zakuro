@@ -1,6 +1,9 @@
 %h1 Color Tweets
+%form{:action => '/', :method => 'GET'}
+  %input{:type => "submit", :value => "Reload"}
 - @tl.each do |t|
   #colors
     - convert_hex(t.text).each do |ch|
       %span#ch{:style => "color: ##{ch}"}> ■
     #original （ "#{t.text}"）
+    %hr#separator
